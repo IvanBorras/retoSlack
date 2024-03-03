@@ -1,0 +1,26 @@
+.header{
+    background-color: rgb(116, 6, 131) ;
+    padding: 10px;
+    
+    
+
+    &_nav{
+        
+        right: -470px;
+        display: flex;
+        justify-content: space-between;
+
+        &-logo{
+            width: 110px;
+            
+    
+        }
+    
+        &-options{
+            width: 50px;
+          
+    
+        }
+
+    }
+}    

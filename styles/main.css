@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* pata hacer una variable que se repite */
+.header {
+  background-color: rgb(116, 6, 131);
+  padding: 10px;
+}
+.header_nav {
+  right: -470px;
+  display: flex;
+  justify-content: space-between;
+}
+.header_nav-logo {
+  width: 110px;
+}
+.header_nav-options {
+  width: 50px;
+}
+
+main {
+  background-color: whitesmoke;
+  width: 100%;
+}
+main .sectionMain {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+}
+main .sectionMain-h1 {
+  font-size: 45px;
+  padding: 25px;
+}
+main .sectionMain_article {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionMain_article-p {
+  padding: 10px;
+  margin: 10px;
+  font-family: "Arial Narrow Bold";
+}
+main .sectionMain_article .enlace {
+  background-color: rgb(102, 33, 119);
+  width: 400px;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+}
+main .sectionMain_article .enlace a {
+  color: white;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+main .sectionWindow {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+main .sectionWindow_article {
+  background-color: rgb(90, 24, 90);
+  border-radius: 15px;
+  width: 600px;
+  height: 340px;
+  /* emojis de ventana */
+}
+main .sectionWindow_article .emojis {
+  position: absolute;
+  z-index: 500;
+  /* moviendo los emojis */
+}
+main .sectionWindow_article .emojis .chescofinger, main .sectionWindow_article .emojis .confeti, main .sectionWindow_article .emojis .eyes, main .sectionWindow_article .emojis .ligth {
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 40px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  gap: 12px;
+  box-shadow: 1px 1px 1px black;
+}
+main .sectionWindow_article .emojis .chescofinger p, main .sectionWindow_article .emojis .confeti p, main .sectionWindow_article .emojis .eyes p, main .sectionWindow_article .emojis .ligth p {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+main .sectionWindow_article .emojis .fingerImage, main .sectionWindow_article .emojis .confetiImage, main .sectionWindow_article .emojis .eyesImage, main .sectionWindow_article .emojis .ligthImage {
+  width: 30px;
+}
+main .sectionWindow_article .emojis .chescofinger {
+  top: -12px;
+  right: -200px;
+}
+main .sectionWindow_article .emojis .confeti {
+  top: 220px;
+  right: -50px;
+}
+main .sectionWindow_article .emojis .eyes {
+  bottom: -320px;
+  right: -380px;
+}
+main .sectionWindow_article .emojis .ligth {
+  bottom: -220px;
+  right: -500px;
+}
+main .sectionWindow_article-colors {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  border-radius: 8px;
+}
+main .sectionWindow_article-colors .red {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  margin-right: 5px;
+  border-radius: 15px;
+}
+main .sectionWindow_article-colors .yellow {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  margin-right: 5px;
+  border-radius: 15px;
+}
+main .sectionWindow_article-colors .green {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 15px;
+}
+main .sectionWindow_article-main {
+  display: flex;
+  gap: 80px;
+}
+main .sectionWindow_article-main .main-left {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 10px 0px 0px 10px;
+  width: 15%;
+  gap: 10px;
+  color: white;
+}
+main .sectionWindow_article-main .main-left p {
+  margin-top: 10px;
+  width: 120px;
+}
+main .sectionWindow_article-main .main-left p:hover {
+  background-color: rgb(144, 228, 228);
+}
+main .sectionWindow_article-main .main-rigth {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  height: 310px;
+  padding: 8px;
+  gap: 40px;
+  background-color: white;
+}
+main .sectionWindow_article-main .main-rigth .projectMagic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sectionWindow_article-main .main-rigth .projectMagic .character {
+  width: 150px;
+  padding-left: 15px;
+}
+main .sectionWindow_article-main .main-rigth .maria {
+  display: flex;
+}
+main .sectionWindow_article-main .main-rigth .maria .mariaImage {
+  width: 100px;
+  margin-right: 10px;
+}
+main .sectionWindow_article-main .main-rigth .maria div {
+  display: block;
+}
+main .sectionWindow_article-main .main-rigth .marcos {
+  display: flex;
+}
+main .sectionWindow_article-main .main-rigth .marcos .marcosImage {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+main .sectionWindow_article-main .main-rigth .marcos div {
+  display: block;
+}
+main .sectionWindow_article-main .main-rigth .marcos .pdf {
+  width: 40px;
+  padding: 5px;
+}
+
+@media screen and ((min-width: 900px) and (min-width: 1024px)) {
+  .sectionGeneral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+  }
+}
+@media screen and ((min-width: 10px) and (min-width: 500px)) {
+  .footer {
+    display: none;
+  }
+}
+@media screen and ((min-width: 900px) and (min-width: 1024px)) {
+  .footer {
+    display: inline;
+  }
+  .footer_images {
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer_images .spaceX {
+    width: 300px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+  }
+  .footer_images .spinLaunch {
+    width: 250px;
+  }
+}/*# sourceMappingURL=main.css.map */

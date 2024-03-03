@@ -1,0 +1,22 @@
+
+/* pata hacer una variable que se repite */
+
+// @mixin pepino (){
+    // margin
+    // padding
+// }
+
+
+// lo llamo de la siguiente manera .... @include pepino();
+
+
+@mixin sizeContainer (){
+    padding: 10px;
+    margin: 10px;
+}
+
+@mixin font (){
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif ;
+}
+

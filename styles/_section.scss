@@ -1,0 +1,280 @@
+// body{
+//     // width: 100%;
+//     // height: 100%;
+// }
+
+main{
+    background-color: whitesmoke;
+    width: 100%;
+     
+
+
+// ventana publicitaria
+
+.sectionMain{
+    background-color: whitesmoke;
+    // padding: 10px;
+    // margin: 10px;
+    @include sizeContainer();
+    
+
+
+    &-h1{
+        font-size: 45px;
+        padding: 25px;
+    }
+
+    &_article{
+        font-size: 20px;
+        @include sizeContainer();
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &-p{
+            @include sizeContainer();
+            font-family:'Arial Narrow Bold';
+        }
+
+        & .enlace{
+                background-color: rgb(102, 33, 119);
+                width: 400px;               
+                border-radius: 5px;
+                padding: 15px;
+                margin-top: 10px;
+                justify-content: center;
+                text-align: center;
+                
+                
+                & a{
+                    color: $color_text; //asi llamo a la variable creada en _var.scss
+                    text-decoration: none; //elimina el subrayado
+                    flex-wrap: wrap;
+
+                }   
+        }
+    
+    }
+
+}
+
+
+// ventana interactiva
+
+.sectionWindow{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+   
+    &_article{
+        background-color: rgb(90, 24, 90);
+        border-radius: 15px;
+        width: 600px;
+        height: 340px;
+
+         /* emojis de ventana */
+
+        & .emojis{
+            position: absolute;
+            z-index: 500; // superpone los contenedores
+            
+            & .chescofinger, .confeti, .eyes, .ligth{
+                position: absolute;
+                display: flex;
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                padding: 10px;
+                border-radius: 30px;
+                gap: 12px;
+                
+                box-shadow: 1px 1px 1px black;
+                & p{
+                    font-size: 20px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+    
+            }
+    
+            & .fingerImage, .confetiImage, .eyesImage, .ligthImage {
+                width: 30px;
+            }
+    
+            /* moviendo los emojis */
+    
+            & .chescofinger{
+                top: -12px;
+                right: -200px;
+            }
+    
+            & .confeti{
+                top: 220px;
+                right: -50px;
+               
+            } 
+    
+            & .eyes {
+                bottom: -320px;
+                right: -380px;
+            }
+               
+    
+            & .ligth{
+                bottom: -220px;
+                right: -500px;
+               
+            }
+        }
+        
+
+        
+
+         
+        &-colors{
+            display: flex;
+            padding: 10px;
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            border-radius: 8px;
+
+
+            .red{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            margin-right: 5px;
+            border-radius: 15px;
+            }
+
+            .yellow{
+            width: 10px;
+            height: 10px;
+            background-color: yellow;
+            margin-right: 5px;
+            border-radius: 15px;
+            }
+
+
+
+            .green{
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border-radius: 15px;
+            }
+
+        }
+
+                
+        &-main{
+            display: flex;
+            gap: 80px;
+           
+
+            .main-left{
+                @include font();
+                margin: 10px 0px 0px 10px;
+                width: 15%;
+                gap: 10px;
+                color: $color_text; //variable 
+            
+
+                & p {
+
+                    margin-top: 10px;
+                    width: 120px;
+                    
+                }
+                
+                & p:hover {
+                    background-color: rgb(144, 228, 228);
+                    
+                }
+
+            }
+
+            .main-rigth{
+                display: flex;
+                width: 75%; //ancho
+                flex-direction: column;
+                height: 310px; //alto
+                padding: 8px;
+                gap: 40px;
+                background-color: white;
+
+                    & .projectMagic{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & .character{
+                            width: 150px;
+                            padding-left: 15px;
+                        }
+                    }
+
+                    & .maria{
+                        display: flex;
+                        
+                        
+
+
+                        & .mariaImage{
+                            width: 100px;
+                            margin-right: 10px;
+                        }
+
+                        & div{
+                            display: block;
+                            
+                        }
+                    }
+
+                        
+                    & .marcos{
+                        display: flex;
+                        
+
+
+                        & .marcosImage{
+                            width: 70px;
+                            height: 70px;
+                            margin-right: 10px;
+                        }
+
+                        & div{
+                            display: block;
+                            
+                        }
+
+                        & .pdf{
+                            width: 40px;
+                            padding: 5px;
+            
+                        }
+
+                    }
+
+            }
+        }
+    }       
+}
+}
+
+
+
+@media screen and ((min-width:900px) and (min-width:1024px)) {
+    .sectionGeneral{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+        
+
+    }
+
+
+}
